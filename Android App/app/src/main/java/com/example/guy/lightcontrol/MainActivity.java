@@ -26,15 +26,16 @@ public class MainActivity extends AppCompatActivity {
         constraintLayout = findViewById(R.id.ConstLayout);
         Button onButton = findViewById(R.id.OnButton);
         Button offButton = findViewById(R.id.Off_Button);
-
-        urlString  = "http://10.0.0.20/LED=STATE";
+        
+        String microcontrollerIp = "10.0.0.20";
+        urlString  = "http://" + microcontrollerIp + "/LED=STATE";
         new RequestTas(getApplicationContext(), constraintLayout).execute(urlString);
 
         onButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                urlString = "http://10.0.0.20/LED=ON";
+                urlString = "http://" + microcontrollerIp + "/LED=ON";
                 new RequestTas(getApplicationContext(), constraintLayout).execute(urlString);
             }
         });
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                urlString  = "http://10.0.0.20/LED=OFF";
+                urlString  = "http://" + microcontrollerIp + "/LED=OFF";
                 new RequestTas(getApplicationContext(), constraintLayout).execute(urlString);
             }
 
