@@ -8,6 +8,6 @@ Video link https://github.com/guyluz11/Smart-Power-Outlet/blob/master/Media/Smar
 
 ![alt text](https://github.com/guyluz11/Smart_power_outlet/blob/master/Media/Light%20is%20On.jpeg)
 
-![alt text](https://github.com/guyluz11/Smart_power_outlet/blob/master/Media/Light%20is%20Off.jpeg)
+![alt text](https://github.com/guyluz11/Smart-Power-Outlet/blob/master/Media/Light%20is%20Off.jpeg)
 
 ![alt text](https://github.com/guyluz11/Smart_power_outlet/blob/master/Media/Microcontroller%20is%20Offline.jpeg)
