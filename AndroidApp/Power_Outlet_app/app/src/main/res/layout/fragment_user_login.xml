@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserLogin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/title_UserLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:shadowColor="@android:color/black"
+            android:text="Welcome to a new way of Life"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emaillInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="172dp"
+            android:layout_marginEnd="8dp"
+            android:textColorHint="@color/textMainColour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/userEmail_StartingPage"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/textMainColour"
+                android:hint="Enter your name"
+                android:inputType="textWebEmailAddress"
+                android:textColor="@color/textMainColour" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="76dp"
+            android:textColorHint="@color/textMainColour"
+            app:layout_constraintEnd_toEndOf="@+id/emaillInput"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/emaillInput"
+            app:layout_constraintTop_toBottomOf="@+id/emaillInput">
+
+            <EditText
+                android:id="@+id/userPassword_StartingPage"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/textMainColour"
+                android:hint="Enter your password"
+                android:textColor="@color/textMainColour"
+                android:inputType="textWebPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/loginButton_UserLogin"
+            android:layout_width="330dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/round_button"
+            android:text="LOGIN"
+            android:textColor="@color/textMainColour"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/textMainColour"
+            app:layout_constraintEnd_toEndOf="@+id/loginButton_UserLogin"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="@+id/loginButton_UserLogin"
+            app:layout_constraintTop_toBottomOf="@+id/loginButton_UserLogin" />
+
+        <TextView
+            android:id="@+id/createNewAccount_UserLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="24dp"
+            android:text="CREATE NEW ACCOUNT"
+            android:textColor="@color/textMainColour"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/loginButton_UserLogin"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="@+id/loginButton_UserLogin" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

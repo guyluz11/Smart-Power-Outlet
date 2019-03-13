@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Register">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/newAccountTitle_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Create Account"
+            android:textColor="@color/textMainColour"
+            android:textSize="40sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NewEmail_EditText_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="8dp"
+            android:textColorHint="@color/textMainColour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newAccountTitle_TextView">
+
+            <EditText
+                android:id="@+id/NewEmail_EditText"
+                android:layout_width="326dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/textMainColour"
+                android:digits="קראטוןםפשדגכעיחלךףזסבהנמצתץ :-qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textWebEmailAddress"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/textMainColour"
+                android:textCursorDrawable="@null" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NewPassword_EditText_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:textColorHint="@color/textMainColour"
+            app:layout_constraintEnd_toEndOf="@+id/NewEmail_EditText_layout"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/NewEmail_EditText_layout"
+            app:layout_constraintTop_toBottomOf="@+id/NewEmail_EditText_layout">
+
+            <EditText
+                android:id="@+id/NewPassword_EditText"
+                android:layout_width="326dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/textMainColour"
+                android:digits="קראטוןםפשדגכעיחלךףזסבהנמצתץ :-qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textWebPassword"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/textMainColour"
+                android:textCursorDrawable="@null" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/LoginAccount_Button"
+            android:layout_width="333dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:alpha="0.80"
+            android:background="@drawable/round_button"
+            android:text="PROCEED"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/NewPassword_EditText_layout"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="@+id/NewPassword_EditText_layout"
+            app:layout_constraintTop_toBottomOf="@+id/NewPassword_EditText_layout"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <TextView
+            android:id="@+id/errors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text=""
+            android:textColor="@color/textMainColour"
+            app:layout_constraintBottom_toTopOf="@+id/LoginAccount_Button"
+            app:layout_constraintEnd_toEndOf="@+id/NewPassword_EditText_layout"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/NewPassword_EditText_layout"
+            app:layout_constraintTop_toBottomOf="@+id/NewPassword_EditText_layout"
+            app:layout_constraintVertical_bias="0.144" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
